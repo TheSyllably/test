@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600&family=Roboto:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <script defer src="./main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="taskname__block">
+        <h1 class="taskname__h">Task name</h1>
+        <form id="taskname">
+          <input class="taskname__input" type="text" placeholder="Enter task name" value="" />
+        </form>
+      </div>
+
+      <div>
+        <div class="subtasks__block">
+          <h1 class="subtasks__block-h">Subtasks</h1>
+          <button class="subtasks__block-button">
+            <svg
+              width="13"
+              height="13"
+              viewBox="0 0 13 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M7 0H6V6H0V7H6V13H7V7H13V6H7V0Z"
+                fill="white"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <div class="tasks__block">
+          <div class="newtask__block flex">
+            <label class="description__label label">
+              Description
+              <input class="newtask__block input" type="text" placeholder="New task" value="" />
+            </label>
+
+            <label class="time__label label">
+              Time
+              <input class="newtask__block-num" type="text" placeholder="0" value="" />
+            </label>
+
+            <label class="button__label">
+              Button
+              <button class="newtask__block btn" data-action="delete">
+                <svg
+                  width="13"
+                  height="13"
+                  viewBox="0 0 13 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <mask
+                    id="path-1-outside-1_1_48"
+                    maskUnits="userSpaceOnUse"
+                    x="-4.1066"
+                    y="-4.1066"
+                    width="21.2132"
+                    height="21.2132"
+                  >
+                    <rect fill="white" x="-4.1066" y="-4.1066" width="21.2132" height="21.2132" />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M11.4497 2.25736L10.7426 1.55026L6.5 5.7929L2.25736 1.55026L1.55025 2.25736L5.79289 6.50001L1.55025 10.7426L2.25736 11.4498L6.5 7.20711L10.7426 11.4498L11.4497 10.7426L7.20711 6.50001L11.4497 2.25736Z"
+                    />
+                  </mask>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M11.4497 2.25736L10.7426 1.55026L6.5 5.7929L2.25736 1.55026L1.55025 2.25736L5.79289 6.50001L1.55025 10.7426L2.25736 11.4498L6.5 7.20711L10.7426 11.4498L11.4497 10.7426L7.20711 6.50001L11.4497 2.25736Z"
+                  />
+                  <path
+                    d="M10.7426 1.55026L11.4497 0.843151L10.7426 0.136044L10.0355 0.843151L10.7426 1.55026ZM11.4497 2.25736L12.1569 2.96447L12.864 2.25736L12.1569 1.55026L11.4497 2.25736ZM6.5 5.7929L5.79289 6.50001L6.5 7.20711L7.20711 6.50001L6.5 5.7929ZM2.25736 1.55026L2.96447 0.843151L2.25736 0.136044L1.55025 0.843151L2.25736 1.55026ZM1.55025 2.25736L0.843146 1.55026L0.136039 2.25736L0.843146 2.96447L1.55025 2.25736ZM5.79289 6.50001L6.5 7.20711L7.20711 6.50001L6.5 5.7929L5.79289 6.50001ZM1.55025 10.7426L0.843146 10.0355L0.136039 10.7426L0.843146 11.4498L1.55025 10.7426ZM2.25736 11.4498L1.55025 12.1569L2.25736 12.864L2.96447 12.1569L2.25736 11.4498ZM6.5 7.20711L7.20711 6.50001L6.5 5.7929L5.79289 6.50001L6.5 7.20711ZM10.7426 11.4498L10.0355 12.1569L10.7426 12.864L11.4497 12.1569L10.7426 11.4498ZM11.4497 10.7426L12.1569 11.4498L12.864 10.7426L12.1569 10.0355L11.4497 10.7426ZM7.20711 6.50001L6.5 5.7929L5.79289 6.50001L6.5 7.20711L7.20711 6.50001ZM10.0355 2.25736L10.7426 2.96447L12.1569 1.55026L11.4497 0.843151L10.0355 2.25736ZM7.20711 6.50001L11.4497 2.25736L10.0355 0.843151L5.79289 5.08579L7.20711 6.50001ZM1.55025 2.25736L5.79289 6.50001L7.20711 5.08579L2.96447 0.843151L1.55025 2.25736ZM2.25736 2.96447L2.96447 2.25736L1.55025 0.843151L0.843146 1.55026L2.25736 2.96447ZM6.5 5.7929L2.25736 1.55026L0.843146 2.96447L5.08579 7.20711L6.5 5.7929ZM2.25736 11.4498L6.5 7.20711L5.08579 5.7929L0.843146 10.0355L2.25736 11.4498ZM2.96447 10.7426L2.25736 10.0355L0.843146 11.4498L1.55025 12.1569L2.96447 10.7426ZM5.79289 6.50001L1.55025 10.7426L2.96447 12.1569L7.20711 7.91422L5.79289 6.50001ZM11.4497 10.7426L7.20711 6.50001L5.79289 7.91422L10.0355 12.1569L11.4497 10.7426ZM10.7426 10.0355L10.0355 10.7426L11.4497 12.1569L12.1569 11.4498L10.7426 10.0355ZM6.5 7.20711L10.7426 11.4498L12.1569 10.0355L7.91421 5.7929L6.5 7.20711ZM10.7426 1.55026L6.5 5.7929L7.91421 7.20711L12.1569 2.96447L10.7426 1.55026Z"
+                    mask="url(#path-1-outside-1_1_48)"
+                  />
+                </svg>
+              </button>
+            </label>
+          </div>
+
+          <div class="oldtask__block flex">
+            <input class="oldtask__block input" type="text" placeholder="Old task" value="" />
+            <input class="oldtask__block-num" type="text" placeholder="40" value="" />
+            <button class="oldtask_block btn" data-action="delete">
+              <svg
+                width="13"
+                height="13"
+                viewBox="0 0 13 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <mask
+                  id="path-1-outside-1_1_48"
+                  maskUnits="userSpaceOnUse"
+                  x="-4.1066"
+                  y="-4.1066"
+                  width="21.2132"
+                  height="21.2132"
+                  fill="black"
+                >
+                  <rect fill="white" x="-4.1066" y="-4.1066" width="21.2132" height="21.2132" />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M11.4497 2.25736L10.7426 1.55026L6.5 5.7929L2.25736 1.55026L1.55025 2.25736L5.79289 6.50001L1.55025 10.7426L2.25736 11.4498L6.5 7.20711L10.7426 11.4498L11.4497 10.7426L7.20711 6.50001L11.4497 2.25736Z"
+                  />
+                </mask>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M11.4497 2.25736L10.7426 1.55026L6.5 5.7929L2.25736 1.55026L1.55025 2.25736L5.79289 6.50001L1.55025 10.7426L2.25736 11.4498L6.5 7.20711L10.7426 11.4498L11.4497 10.7426L7.20711 6.50001L11.4497 2.25736Z"
+                  fill="black"
+                />
+                <path
+                  d="M10.7426 1.55026L11.4497 0.843151L10.7426 0.136044L10.0355 0.843151L10.7426 1.55026ZM11.4497 2.25736L12.1569 2.96447L12.864 2.25736L12.1569 1.55026L11.4497 2.25736ZM6.5 5.7929L5.79289 6.50001L6.5 7.20711L7.20711 6.50001L6.5 5.7929ZM2.25736 1.55026L2.96447 0.843151L2.25736 0.136044L1.55025 0.843151L2.25736 1.55026ZM1.55025 2.25736L0.843146 1.55026L0.136039 2.25736L0.843146 2.96447L1.55025 2.25736ZM5.79289 6.50001L6.5 7.20711L7.20711 6.50001L6.5 5.7929L5.79289 6.50001ZM1.55025 10.7426L0.843146 10.0355L0.136039 10.7426L0.843146 11.4498L1.55025 10.7426ZM2.25736 11.4498L1.55025 12.1569L2.25736 12.864L2.96447 12.1569L2.25736 11.4498ZM6.5 7.20711L7.20711 6.50001L6.5 5.7929L5.79289 6.50001L6.5 7.20711ZM10.7426 11.4498L10.0355 12.1569L10.7426 12.864L11.4497 12.1569L10.7426 11.4498ZM11.4497 10.7426L12.1569 11.4498L12.864 10.7426L12.1569 10.0355L11.4497 10.7426ZM7.20711 6.50001L6.5 5.7929L5.79289 6.50001L6.5 7.20711L7.20711 6.50001ZM10.0355 2.25736L10.7426 2.96447L12.1569 1.55026L11.4497 0.843151L10.0355 2.25736ZM7.20711 6.50001L11.4497 2.25736L10.0355 0.843151L5.79289 5.08579L7.20711 6.50001ZM1.55025 2.25736L5.79289 6.50001L7.20711 5.08579L2.96447 0.843151L1.55025 2.25736ZM2.25736 2.96447L2.96447 2.25736L1.55025 0.843151L0.843146 1.55026L2.25736 2.96447ZM6.5 5.7929L2.25736 1.55026L0.843146 2.96447L5.08579 7.20711L6.5 5.7929ZM2.25736 11.4498L6.5 7.20711L5.08579 5.7929L0.843146 10.0355L2.25736 11.4498ZM2.96447 10.7426L2.25736 10.0355L0.843146 11.4498L1.55025 12.1569L2.96447 10.7426ZM5.79289 6.50001L1.55025 10.7426L2.96447 12.1569L7.20711 7.91422L5.79289 6.50001ZM11.4497 10.7426L7.20711 6.50001L5.79289 7.91422L10.0355 12.1569L11.4497 10.7426ZM10.7426 10.0355L10.0355 10.7426L11.4497 12.1569L12.1569 11.4498L10.7426 10.0355ZM6.5 7.20711L10.7426 11.4498L12.1569 10.0355L7.91421 5.7929L6.5 7.20711ZM10.7426 1.55026L6.5 5.7929L7.91421 7.20711L12.1569 2.96447L10.7426 1.55026Z"
+                  fill="black"
+                  mask="url(#path-1-outside-1_1_48)"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="create__buttons">
+          <button class="save__btn">save task in localstorage</button>
+          <button class="create__btn">create new task</button>
+        </div>
+      </div>
+
+      <h1 class="tasklist">Task list</h1>
+      <div class="out"></div>
+    </div>
+  </body>
+</html>
